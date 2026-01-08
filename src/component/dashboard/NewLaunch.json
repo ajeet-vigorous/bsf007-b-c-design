@@ -1,0 +1,780 @@
+{
+    "new_launch": [
+        {
+            "id": "151154",
+            "name": "Race track",
+            "product": "MAC88",
+            "category": "lucky7",
+            "position": 4,
+            "game_type": "lucky7",
+            "url_thumb": "frontend_config\/diam\/images\/17627622967382293.webp",
+            "multiplier": "100000",
+            "category_id": "99995",
+            "redirect_type": "detail"
+        },
+        {
+            "id": "151133",
+            "name": "Jhandi Munda",
+            "product": "MAC88",
+            "category": "lucky7",
+            "position": 5,
+            "game_type": "lucky7",
+            "url_thumb": "frontend_config\/diam\/images\/17627623046417456.webp",
+            "multiplier": "100000",
+            "category_id": "99995",
+            "redirect_type": "detail"
+        },
+        {
+            "id": "151178",
+            "name": "the voice",
+            "product": "MAC88",
+            "category": "lucky7",
+            "position": "6",
+            "game_type": "lucky7",
+            "url_thumb": "frontend_config\/diam\/images\/17650464446035030.png",
+            "multiplier": "100000",
+            "category_id": "99995",
+            "redirect_type": "detail"
+        },
+        {
+            "id": "151080",
+            "name": "Twist X",
+            "product": "MAC88",
+            "category": "lucky7",
+            "position": 7,
+            "game_type": "lucky7",
+            "url_thumb": "frontend_config\/diam\/images\/17627623509582092.webp",
+            "multiplier": "100000",
+            "category_id": "99995",
+            "redirect_type": "detail"
+        },
+        {
+            "id": "151095",
+            "name": "Rock Paper Scissors",
+            "product": "MAC88",
+            "category": "lucky7",
+            "position": 8,
+            "game_type": "lucky7",
+            "url_thumb": "frontend_config\/diam\/images\/17627632158664195.webp",
+            "multiplier": "100000",
+            "category_id": "99995",
+            "redirect_type": "detail"
+        },
+        {
+            "id": "151179",
+            "name": "deal or no deal",
+            "product": "MAC88",
+            "category": "lucky7",
+            "position": "9",
+            "game_type": "lucky7",
+            "url_thumb": "frontend_config\/diam\/images\/17650464311788120.png",
+            "multiplier": "100000",
+            "category_id": "99995",
+            "redirect_type": "detail"
+        },
+        {
+            "id": "151170",
+            "name": "snakes",
+            "product": "MAC88",
+            "category": "lucky7",
+            "position": "10",
+            "game_type": "lucky7",
+            "url_thumb": "frontend_config\/diam\/images\/17650464099238492.png",
+            "multiplier": "100000",
+            "category_id": "99995",
+            "redirect_type": "detail"
+        },
+        {
+            "id": "151163",
+            "name": "Dragon Tower",
+            "product": "MAC88",
+            "category": "lucky7",
+            "position": 1,
+            "game_type": "lucky7",
+            "url_thumb": "frontend_config\/diam\/images\/17627622186833003.webp",
+            "multiplier": "100000",
+            "category_id": "99995",
+            "redirect_type": "detail"
+        },
+        {
+            "id": "151165",
+            "name": "Naughty Button",
+            "product": "naughty Button",
+            "category": "naughty Button",
+            "position": 3,
+            "game_type": "naughty Button",
+            "url_thumb": "frontend_config\/diam\/images\/17627622588055206.webp",
+            "multiplier": "100000",
+            "category_id": "99995",
+            "redirect_type": "detail"
+        },
+        {
+            "id": "510076",
+            "name": "Bikini Games",
+            "product": null,
+            "category": "lucky7",
+            "position": 11,
+            "game_type": null,
+            "url_thumb": "frontend_config\/diam\/images\/17627623926928900.webp",
+            "multiplier": null,
+            "category_id": "99995",
+            "redirect_type": "detail"
+        },
+        {
+            "id": "151162",
+            "name": "pump",
+            "product": null,
+            "category": "lucky7",
+            "position": 12,
+            "game_type": "lucky7",
+            "url_thumb": "frontend_config\/diam\/images\/17627623992115322.webp",
+            "multiplier": "100000",
+            "category_id": "99995",
+            "redirect_type": "detail"
+        },
+        {
+            "id": "151164",
+            "name": "packs",
+            "product": "MAC88",
+            "category": "lucky7",
+            "position": 2,
+            "game_type": "lucky7",
+            "url_thumb": "frontend_config\/diam\/images\/17627622254159157.webp",
+            "multiplier": "100000",
+            "category_id": "99995",
+            "redirect_type": "detail"
+        }
+    ],
+    "our_provider": [
+        {
+            "id": "1",
+            "name": "popok",
+            "product": "popok",
+            "category": "popok",
+            "position": 17,
+            "game_type": "popok",
+            "url_thumb": "frontend_config\/diam\/images\/17627625365385933.webp",
+            "multiplier": "100000",
+            "category_id": "99998",
+            "redirect_type": "list"
+        },
+        {
+            "id": "2",
+            "name": "bikini-games",
+            "product": "bikini-games",
+            "category": "bikini-games",
+            "position": 18,
+            "game_type": "bikini-games",
+            "url_thumb": "frontend_config\/diam\/images\/17627625431521057.webp",
+            "multiplier": "100000",
+            "category_id": "99998",
+            "redirect_type": "list"
+        },
+        {
+            "id": "3",
+            "name": "betgamestv",
+            "product": "betgamestv",
+            "category": "betgamestv",
+            "position": 16,
+            "game_type": "betgamestv",
+            "url_thumb": "frontend_config\/diam\/images\/17627625282753269.webp",
+            "multiplier": "100000",
+            "category_id": "99998",
+            "redirect_type": "list"
+        },
+        {
+            "id": "4",
+            "name": "ae-sexy",
+            "product": "ae-sexy",
+            "category": "ae-sexy",
+            "position": 15,
+            "game_type": "ae-sexy",
+            "url_thumb": "frontend_config\/diam\/images\/17627625172683208.webp",
+            "multiplier": "100000",
+            "category_id": "99998",
+            "redirect_type": "list"
+        },
+        {
+            "id": "5",
+            "name": "kingmaker",
+            "product": "kingmaker",
+            "category": "kingmaker",
+            "position": 14,
+            "game_type": "kingmaker",
+            "url_thumb": "frontend_config\/diam\/images\/17627625102708520.webp",
+            "multiplier": "100000",
+            "category_id": "99998",
+            "redirect_type": "list"
+        },
+        {
+            "id": "6",
+            "name": "gamzix",
+            "product": "gamzix",
+            "category": "gamzix",
+            "position": 13,
+            "game_type": "gamzix",
+            "url_thumb": "frontend_config\/diam\/images\/17627625045686005.webp",
+            "multiplier": "100000",
+            "category_id": "99998",
+            "redirect_type": "list"
+        },
+        {
+            "id": "7",
+            "name": "bombay-live",
+            "product": "bombay-live",
+            "category": "bombay-live",
+            "position": 12,
+            "game_type": "bombay-live",
+            "url_thumb": "frontend_config\/diam\/images\/17627624976452990.webp",
+            "multiplier": "100000",
+            "category_id": "99998",
+            "redirect_type": "list"
+        },
+        {
+            "id": "8",
+            "name": "jili",
+            "product": "jili",
+            "category": "jili",
+            "position": 11,
+            "game_type": "jili",
+            "url_thumb": "frontend_config\/diam\/images\/17627624906539659.webp",
+            "multiplier": "100000",
+            "category_id": "99998",
+            "redirect_type": "list"
+        },
+     
+        {
+            "id": "10",
+            "name": "vivo-gaming",
+            "product": "vivo-gaming",
+            "category": "vivo-gaming",
+            "position": 9,
+            "game_type": "vivo-gaming",
+            "url_thumb": "frontend_config\/diam\/images\/17627624742947792.webp",
+            "multiplier": "100000",
+            "category_id": "99998",
+            "redirect_type": "list"
+        },
+        {
+            "id": "11",
+            "name": "spribe",
+            "product": "spribe",
+            "category": "spribe",
+            "position": 8,
+            "game_type": "spribe",
+            "url_thumb": "frontend_config\/diam\/images\/17627624675433212.webp",
+            "multiplier": "100000",
+            "category_id": "99998",
+            "redirect_type": "list"
+        },
+        {
+            "id": "12",
+            "name": "turbogames",
+            "product": "turbogames",
+            "category": "turbogames",
+            "position": 7,
+            "game_type": "turbogames",
+            "url_thumb": "frontend_config\/diam\/images\/17627624579885109.webp",
+            "multiplier": null,
+            "category_id": "99998",
+            "redirect_type": "list"
+        },
+        {
+            "id": "13",
+            "name": "smartsoft",
+            "product": "smartsoft",
+            "category": "smartsoft",
+            "position": 6,
+            "game_type": "smartsoft",
+            "url_thumb": "frontend_config\/diam\/images\/17627624518454800.webp",
+            "multiplier": null,
+            "category_id": "99998",
+            "redirect_type": "list"
+        },
+        {
+            "id": "14",
+            "name": "ezugi-gaming",
+            "product": "ezugi-gaming",
+            "category": "ezugi-gaming",
+            "position": 5,
+            "game_type": "ezugi-gaming",
+            "url_thumb": "frontend_config\/diam\/images\/17627624444267345.webp",
+            "multiplier": null,
+            "category_id": "99998",
+            "redirect_type": "list"
+        },
+        {
+            "id": "15",
+            "name": "creed",
+            "product": "creed",
+            "category": "creed",
+            "position": 4,
+            "game_type": "creed",
+            "url_thumb": "frontend_config\/diam\/images\/17627624367177485.webp",
+            "multiplier": null,
+            "category_id": "99998",
+            "redirect_type": "list"
+        },
+        {
+            "id": "16",
+            "name": "mac-excite",
+            "product": "mac-excite",
+            "category": "mac-excite",
+            "position": 3,
+            "game_type": "mac-excite",
+            "url_thumb": "frontend_config\/diam\/images\/17627624307580326.webp",
+            "multiplier": null,
+            "category_id": "99998",
+            "redirect_type": "list"
+        },
+        {
+            "id": "17",
+            "name": "mac88",
+            "product": "mac88",
+            "category": "mac88",
+            "position": 2,
+            "game_type": "mac88",
+            "url_thumb": "frontend_config\/diam\/images\/17627624232498773.webp",
+            "multiplier": "100000",
+            "category_id": "99998",
+            "redirect_type": "list"
+        },
+        {
+            "id": "1761561248",
+            "name": "mac88-virtuals",
+            "product": "mac88-virtuals",
+            "category": "mac88-virtuals",
+            "position": 1,
+            "game_type": "mac88-virtuals",
+            "url_thumb": "frontend_config\/diam\/images\/17627624134368811.webp",
+            "multiplier": "100000",
+            "category_id": "99998",
+            "redirect_type": "list"
+        }
+    ],
+    "highlight_casino": [
+        {
+            "id": "1761470979",
+            "name": "color and chicken games",
+            "product": "color-and-chicken-games",
+            "category": "color-and-chicken-games",
+            "position": "3",
+            "game_type": "color-and-chicken-games",
+            "url_thumb": "frontend_config\/diam\/images\/17627625734204431.gif",
+            "multiplier": "100000",
+            "category_id": "99998",
+            "redirect_type": "list"
+        },
+        {
+            "id": "1761471099",
+            "name": "live prediction",
+            "product": "live prediction",
+            "category": "live prediction",
+            "position": "4",
+            "game_type": "live prediction",
+            "url_thumb": "frontend_config\/diam\/images\/17650463849494368.gif",
+            "multiplier": "100000",
+            "category_id": "99998",
+            "redirect_type": "list"
+        },
+        {
+            "id": "1761990148",
+            "name": "aviator",
+            "product": "all",
+            "category": "aviator",
+            "position": "1",
+            "game_type": "aviator",
+            "url_thumb": "frontend_config\/diam\/images\/17627625602470028.gif",
+            "multiplier": "100000",
+            "category_id": "99998",
+            "redirect_type": "list"
+        },
+        {
+            "id": "1761990185",
+            "name": "mines",
+            "product": "all",
+            "category": "mines",
+            "position": "2",
+            "game_type": "mines",
+            "url_thumb": "frontend_config\/diam\/images\/17627625664266101.gif",
+            "multiplier": "100000",
+            "category_id": "99998",
+            "redirect_type": "list"
+        }
+    ],
+    "mac88": [
+        {
+            "id": 150001,
+            "name": "Dragon Tiger",
+            "category_id": 99995,
+            "image": "https://tezcdn.io/casino/mac88-500*299/blue/dragontiger.webp"
+        },
+        {
+            "id": 150004,
+            "name": "Bollywood Casino",
+            "category_id": 99995,
+            "image": "https://tezcdn.io/casino/mac88-500*299/blue/roulette.webp"
+        },
+        {
+            "id": 150005,
+            "name": "20-20 Poker",
+            "category_id": 99995,
+            "image": "https://tezcdn.io/casino/mac88-500*299/blue/20-20poker.webp"
+        },
+        {
+            "id": 150009,
+            "name": "One Day Teenpatti",
+            "category_id": 99995,
+            "image": "https://tezcdn.io/casino/mac88-500*299/blue/onedayteenpatti.webp"
+        },
+        {
+            "id": 150031,
+            "name": "Bollywood Casino",
+            "category_id": 99995,
+            "image": "https://tezcdn.io/casino/mac88-500*299/blue/bollywoodcasino.webp"
+        },
+        {
+            "id": 150032,
+            "name": "Poker 1-Day",
+            "category_id": 99995,
+            "image": "https://tezcdn.io/casino/mac88-500*299/blue/poker.webp"
+        },
+        {
+            "id": 150034,
+            "name": "Super Over",
+            "category_id": 99995,
+            "image": "https://tezcdn.io/casino/mac88-500*299/blue/superover.webp"
+        },
+        {
+            "id": 150035,
+            "name": "Five Cricket",
+            "category_id": 99995,
+            "image": "https://tezcdn.io/casino/mac88-500*299/blue/fivecricket.webp"
+        },
+        {
+            "id": 150006,
+            "name": "Lucky 7",
+            "category_id": 99995,
+            "image": "https://tezcdn.io/casino/mac88-500*299/blue/lucky7.webp"
+        },
+        {
+            "id": 150033,
+            "name": "Teenpatti 20-20",
+            "category_id": 99995,
+            "image": "https://tezcdn.io/casino/mac88-500*299/blue/2020teenpatti.webp"
+        },
+        {
+            "id": 150028,
+            "name": "2 Cards One Teenpatti",
+            "category_id": 99995,
+            "image": "https://tezcdn.io/casino/mac88-500*299/blue/2cardonedayteenpatti.webp"
+        },
+        {
+            "id": 150030,
+            "name": "Muflis Teen Patti 1 Day",
+            "category_id": 99995,
+            "image": "https://tezcdn.io/casino/mac88-500*299/blue/muflisteenpattioneday.webp"
+        },
+        {
+            "id": 150023,
+            "name": "Test Teen Patti",
+            "category_id": 99995,
+            "image": "https://tezcdn.io/casino/mac88-500*299/blue/teenpattitest.webp"
+        },
+        {
+            "id": 150010,
+            "name": "32 Cards",
+            "category_id": 99995,
+            "image": "https://tezcdn.io/casino/mac88-500*299/blue/32cards.webp"
+        },
+        {
+            "id": 150016,
+            "name": "Queen Race",
+            "category_id": 99995,
+            "image": "https://tezcdn.io/casino/mac88-500*299/blue/queenrace.webp"
+        },
+        {
+            "id": 150019,
+            "name": "Worli Matka",
+            "category_id": 99995,
+            "image": "https://tezcdn.io/casino/mac88-500*299/blue/worlimatka.webp"
+        },
+        {
+            "id": 150017,
+            "name": "Race 20-20",
+            "category_id": 99995,
+            "image": "https://tezcdn.io/casino/mac88-500*299/blue/race20.webp"
+        },
+        {
+            "id": 150013,
+            "name": "Dragon Tiger lion",
+            "category_id": 99995,
+            "image": "https://tezcdn.io/casino/mac88-500*299/blue/dragontigerlion.webp"
+        },
+        {
+            "id": 150014,
+            "name": "Amar Akbar Anthony",
+            "category_id": 99995,
+            "image": "https://tezcdn.io/casino/mac88-500*299/blue/amarakbaranthony.webp"
+        },
+        {
+            "id": 150036,
+            "name": "Dragon One Tiger",
+            "category_id": 99995,
+            "image": "https://tezcdn.io/casino/mac88-500*299/blue/dragontigeroneday.webp"
+        },
+        {
+            "id": 150002,
+            "name": "Baccarat",
+            "category_id": 99995,
+            "image": "https://tezcdn.io/casino/mac88-500*299/blue/baccarat.webp"
+        },
+        {
+            "id": 150003,
+            "name": "Sicbo",
+            "category_id": 99995,
+            "image": "https://tezcdn.io/casino/mac88-500*299/blue/sicbo.webp"
+        },
+        {
+            "id": 150007,
+            "name": "Andar Bahar",
+            "category_id": 99995,
+            "image": "https://tezcdn.io/casino/mac88-500*299/blue/andarbahar.webp"
+        },
+        {
+            "id": 150042,
+            "name": "2 Cards Teenpatti",
+            "category_id": 99995,
+            "image": "https://tezcdn.io/casino/mac88-500*299/blue/2cardsteenpatti.webp"
+        },
+        {
+            "id": 150015,
+            "name": "3 Cards Judgement",
+            "category_id": 99995,
+            "image": "https://tezcdn.io/casino/mac88-500*299/blue/3cardjudgement.webp"
+        },
+        {
+            "id": 150025,
+            "name": "Trio",
+            "category_id": 99995,
+            "image": "https://tezcdn.io/casino/mac88-500*299/blue/trio.webp"
+        },
+        {
+            "id": 150020,
+            "name": "Lottery",
+            "category_id": 99995,
+            "image": "https://tezcdn.io/casino/mac88-500*299/blue/lottery.webp"
+        }
+    ],
+    "rc": [
+        {
+            "id": 900001,
+            "name": "7 UP DOWN",
+            "category_id": 99995,
+            "image": "https://cdn.dreamcasino.live/rg_7up_7down.webp"
+        },
+        {
+            "id": 900002,
+            "name": "AUTO ROULETTE",
+            "category_id": 99995,
+            "image": "https://cdn.dreamcasino.live/rg_roulette.webp"
+        },
+        {
+            "id": 900005,
+            "name": "CRICKET WAR",
+            "category_id": 99995,
+            "image": "https://cdn.dreamcasino.live/rg_cricket_war.webp"
+        },
+        {
+            "id": 900006,
+            "name": "BACCARAT",
+            "category_id": 99995,
+            "image": "https://cdn.dreamdelhi.com/rg/baccarat.webp"
+        },
+        {
+            "id": 900008,
+            "name": "3 CARDS JUDGEMENT",
+            "category_id": 99995,
+            "image": "https://cdn.dreamcasino.live/rg_3cards_judgement.webp"
+        },
+        {
+            "id": 900009,
+            "name": "CASINO WAR",
+            "category_id": 99995,
+            "image": "https://cdn.dreamcasino.live/rg_casino_war.webp"
+        },
+        {
+            "id": 900012,
+            "name": "ROYAL GAMING LOBBY",
+            "category_id": 99995,
+            "image": "https://cdn.dreamcasino.live/rg_live_lobby.webp"
+        },
+        {
+            "id": 900013,
+            "name": "BOOK CRICKET",
+            "category_id": 99995,
+            "image": "https://cdn.dreamcasino.live/rg_book_cricket.webp"
+        },
+        {
+            "id": 900014,
+            "name": "HI LOW",
+            "category_id": 99995,
+            "image": "https://cdn.dreamcasino.live/rg_high_low.webp"
+        },
+        {
+            "id": 900019,
+            "name": "ONE DAY TEENPATTI",
+            "category_id": 99995,
+            "image": "https://cdn.dreamdelhi.com/rg/teen_patti_one_day.webp"
+        },
+        {
+            "id": 900023,
+            "name": "AKBAR ROMEO WALTER",
+            "category_id": 99995,
+            "image": "https://cdn.dreamcasino.live/rg_arw.webp"
+        },
+        {
+            "id": 900027,
+            "name": "DRAGON TIGER ONE DAY",
+            "category_id": 99995,
+            "image": "https://cdn.dreamdelhi.com/rg/dragon_tiger_one_day.webp"
+        },
+        {
+            "id": 900037,
+            "name": "TRIO",
+            "category_id": 99995,
+            "image": "https://cdn.dreamdelhi.com/rg/trio.webp"
+        },
+        {
+            "id": 900039,
+            "name": "2 CARD TP ONEDAY",
+            "category_id": 99995,
+            "image": "https://cdn.dreamdelhi.com/rg/2_card_teen_patti_one%20day.webp"
+        },
+        {
+            "id": 900046,
+            "name": "CENTER CARD",
+            "category_id": 99995,
+            "image": "https://cdn.dreamdelhi.com/rg/center_card.webp"
+        },
+        {
+            "id": 900075,
+            "name": "ROULETTE ",
+            "category_id": 99995,
+            "image": "https://cdn.dreamdelhi.com/rg/roulette.webp"
+        },
+        {
+            "id": 901012,
+            "name": "VR ROULETTE",
+            "category_id": 99995,
+            "image": "https://cdn.royalgaming.online/rg_vr_roulette.jpg"
+        },
+        {
+            "id": 901013,
+            "name": "VR DUS KA DUM",
+            "category_id": 99995,
+            "image": "https://cdn.dreamcasino.live/rg_dus_kadum_vr.webp"
+        },
+        {
+            "id": 901018,
+            "name": "VR 29 CARD BACCARAT",
+            "category_id": 99995,
+            "image": "https://cdn.dreamdelhi.com/rg/29_card_baccarat_vr.webp"
+        },
+        {
+            "id": 901023,
+            "name": "VR CASINO METER",
+            "category_id": 99995,
+            "image": "https://cdn.dreamcasino.live/rg_casino_meter_vr.webp"
+        },
+        {
+            "id": 901027,
+            "name": "VR FOOTBALL STUDIO",
+            "category_id": 99995,
+            "image": "https://cdn.dreamcasino.live/rg_fb_studio_vr.webp"
+        },
+        {
+            "id": 901029,
+            "name": "VR MOVIE CASINO",
+            "category_id": 99995,
+            "image": "https://cdn.dreamcasino.live/rg_movie_casino_vr.webp"
+        },
+        {
+            "id": 901032,
+            "name": "VR KING RACE",
+            "category_id": 99995,
+            "image": "https://cdn.dreamcasino.live/rg_king_race_vr.webp"
+        },
+        {
+            "id": 901033,
+            "name": "VR SIDE BET CITY",
+            "category_id": 99995,
+            "image": "https://cdn.dreamcasino.live/rg_sb_city_vr.webp"
+        },
+        {
+            "id": 901036,
+            "name": "VR TRIO",
+            "category_id": 99995,
+            "image": "https://cdn.dreamcasino.live/rg_trio_vr.webp"
+        },
+        {
+            "id": 901037,
+            "name": "VR THE TRAP",
+            "category_id": 99995,
+            "image": "https://cdn.dreamcasino.live/rg_the_trap_vr.webp"
+        },
+        {
+            "id": 901045,
+            "name": "VR CENTER CARD",
+            "category_id": 99995,
+            "image": "https://cdn.dreamdelhi.com/rg/center_card_vr.webp"
+        },
+        {
+            "id": 901046,
+            "name": "VR HIGH CARD",
+            "category_id": 99995,
+            "image": "https://cdn.dreamdelhi.com/rg/high_card_vr.webp"
+        },
+        {
+            "id": 900000,
+            "name": "VR ROYAL GAMING LOBBY",
+            "category_id": 99995,
+            "image": "https://cdn.dreamcasino.live/rg_live_lobby.webp"
+        },
+        {
+            "id": 901030,
+            "name": "VR POKER",
+            "category_id": 99995,
+            "image": "https://cdn.dreamcasino.live/rg_poker_vr.webp"
+        },
+        {
+            "id": 812,
+            "name": "MINES",
+            "category_id": 99998,
+            "image": "https://cdn.hub88.io/Betsy/bty_Mines.jpg"
+        }
+    ]
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
