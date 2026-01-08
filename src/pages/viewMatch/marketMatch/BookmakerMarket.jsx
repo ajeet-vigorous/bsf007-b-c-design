@@ -46,7 +46,9 @@ const BookmakerComponent = ({
       <div className={`${bookmaker2Fancy?.length > 0 ? "w-[75%]" : 'w-[100%]'}`}>
         {matchScoreDetails?.team_data?.length > 0 && (
           <>
-      
+          {console.log(inplayMatch, "ffffffffffffffffffffffffff")
+          }
+  
             <MatchDetailsHeaderSection 
               cashOut={
                 <CashOutSystem
@@ -178,8 +180,8 @@ const BookmakerComponent = ({
                         }}
                       >
                         <BlinkingComponent
-                          price={(commList.lgaai * 100).toFixed(2)}
-                          size={(commList.khaai * 100).toFixed(2)}
+                          price={(commList.lgaai * 100) / 100}
+                          size={(commList.khaai * 100) / 100}
                           color={"bg-[#8DD9FF]"}
                           blinkColor={"bg-[#00B2FF]"}
                           textColors={"text-black"}
@@ -197,7 +199,8 @@ const BookmakerComponent = ({
                             data: commList,
                             nameOther: matchScoreDetails.team_data,
                             type: "No",
-                            odds: commList.khaai,
+                            odds: inplayMatch && inplayMatch?.bookmakerRange > 0 && commList?.khaai != 0 ? (Number(commList?.lgaai) + (Number(commList?.bookmakerRange) / 100 ))
+              : (Number(commList?.khaai) * 100).toFixed(0),
                             name: commList.team_name,
                             betFor: "odds",
                             oddsType: "bookmaker",
@@ -213,8 +216,9 @@ const BookmakerComponent = ({
                         }}
                       >
                         <BlinkingComponent
-                          price={(commList.khaai * 100).toFixed(2)}
-                          size={(commList.lgaai * 100).toFixed(2)}
+                          price={inplayMatch && inplayMatch?.bookmakerRange > 0 && commList?.khaai != 0 ? (Number(commList?.lgaai) + (Number(commList?.bookmakerRange) / 100 ))
+              : (Number(commList?.khaai) * 100) / 100}
+                          size={(commList.lgaai * 100) / 100}
                           color={"bg-[#FF94BC]"}
                           blinkColor={"bg-[#FE7A7F]"}
                           textColors={"text-black"}
