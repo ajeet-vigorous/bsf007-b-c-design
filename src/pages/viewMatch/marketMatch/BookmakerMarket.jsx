@@ -147,8 +147,8 @@ const BookmakerComponent = ({
                         }}
                       >
                         <BlinkingComponent
-                          price={(commList.lgaai * 100).toFixed(2)}
-                          size={(commList.khaai * 100).toFixed(2)}
+                          price={((commList.lgaai * 100) / 100) * 100}
+                          size={(commList.khaai * 100) / 100}
                           color={"bg-[#8DD9FF]"}
                           blinkColor={"bg-[#00B2FF]"}
                           textColors={"text-black"}
@@ -180,7 +180,7 @@ const BookmakerComponent = ({
                         }}
                       >
                         <BlinkingComponent
-                          price={(commList.lgaai * 100) / 100}
+                          price={((commList.lgaai * 100) / 100) * 100}
                           size={(commList.khaai * 100) / 100}
                           color={"bg-[#8DD9FF]"}
                           blinkColor={"bg-[#00B2FF]"}
@@ -199,8 +199,9 @@ const BookmakerComponent = ({
                             data: commList,
                             nameOther: matchScoreDetails.team_data,
                             type: "No",
-                            odds: inplayMatch && inplayMatch?.bookmakerRange > 0 && commList?.khaai != 0 ? (Number(commList?.lgaai) + (Number(commList?.bookmakerRange) / 100 ))
-              : (Number(commList?.khaai) * 100).toFixed(0),
+                            // odds: commList?.khaai,
+                             odds: inplayMatch && inplayMatch?.bookmakerRange > 0 && commList?.khaai != 0 ? (Number(commList?.lgaai) + (Number(inplayMatch?.bookmakerRange) / 100 ))
+              : (Number(commList?.khaai)),
                             name: commList.team_name,
                             betFor: "odds",
                             oddsType: "bookmaker",
@@ -216,8 +217,8 @@ const BookmakerComponent = ({
                         }}
                       >
                         <BlinkingComponent
-                          price={inplayMatch && inplayMatch?.bookmakerRange > 0 && commList?.khaai != 0 ? (Number(commList?.lgaai) + (Number(commList?.bookmakerRange) / 100 ))
-              : (Number(commList?.khaai) * 100) / 100}
+                          price={inplayMatch && inplayMatch?.bookmakerRange > 0 && commList?.khaai != 0 ? ((Number(commList?.lgaai) + (Number(inplayMatch?.bookmakerRange) / 100 )) * 100)
+              : (Number(commList?.khaai * 100) / 100)}
                           size={(commList.lgaai * 100) / 100}
                           color={"bg-[#FF94BC]"}
                           blinkColor={"bg-[#FE7A7F]"}
@@ -226,7 +227,6 @@ const BookmakerComponent = ({
                         />
                       </span>
                     </div>
-
                     {(commList.lgaai === "0.00" || commList.lgaai === "0.000") && (
                       <div className=" h-[40px] lg:h-[33px] bg-black/60 rounded-[4px] w-[35%] lg:w-[16%] xl:w-[23%] px-0.5 right-0 absolute flex justify-center items-center ">
                         <div className="2xl:px-14 lg:px-14 py-2 px-2 text-nowrap rounded font-medium bg-transparent opacity-90">

@@ -46,7 +46,7 @@ const bsf007Settings = {
   Lagai: "Lagai",
   Khaai: "Khaai",
   isCashout: false,
-  apiurl: 'https://api.bsf007.in/v1/',
+  apiurl: 'https://api.bsf5050.in/v1/',
   domainName: "bsf007",
   colors: {
     "--primary": "#001F3F",
