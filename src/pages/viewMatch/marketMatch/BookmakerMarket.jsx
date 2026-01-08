@@ -217,8 +217,20 @@ const BookmakerComponent = ({
                         }}
                       >
                         <BlinkingComponent
-                          price={inplayMatch && inplayMatch?.bookmakerRange > 0 && commList?.khaai != 0 ? ((Number(commList?.lgaai) + (Number(inplayMatch?.bookmakerRange) / 100 )) * 100)
-              : (Number(commList?.khaai * 100) / 100)}
+                          price={
+  inplayMatch &&
+  inplayMatch?.bookmakerRange > 0 &&
+  commList?.khaai != 0
+    ? Number(
+        (
+          (Number(commList?.lgaai) +
+            Number(inplayMatch?.bookmakerRange) / 100) *
+          100
+        ).toFixed(2)
+      )
+    : Number((Number(commList?.khaai) * 100).toFixed(2))
+}
+
                           size={(commList.lgaai * 100) / 100}
                           color={"bg-[#FF94BC]"}
                           blinkColor={"bg-[#FE7A7F]"}
