@@ -40,15 +40,18 @@ const BookmakerComponent = ({
     handleButtonValues
   } = betplaceSection;
 
+  const formatPrice = (value) => {
+  const num = Number(value);
+  return Number.isInteger(num) ? num : parseFloat(num.toFixed(2));
+};
+
   return (
     <>
 
       <div className={`${bookmaker2Fancy?.length > 0 ? "w-[75%]" : 'w-[100%]'}`}>
         {matchScoreDetails?.team_data?.length > 0 && (
           <>
-          {console.log(inplayMatch, "ffffffffffffffffffffffffff")
-          }
-  
+         
             <MatchDetailsHeaderSection 
               cashOut={
                 <CashOutSystem
@@ -147,8 +150,8 @@ const BookmakerComponent = ({
                         }}
                       >
                         <BlinkingComponent
-                          price={((commList.lgaai * 100) / 100) * 100}
-                          size={(commList.khaai * 100) / 100}
+                          price={formatPrice(commList.lgaai * 100)}
+                          size={0}
                           color={"bg-[#8DD9FF]"}
                           blinkColor={"bg-[#00B2FF]"}
                           textColors={"text-black"}
@@ -180,8 +183,8 @@ const BookmakerComponent = ({
                         }}
                       >
                         <BlinkingComponent
-                          price={((commList.lgaai * 100) / 100) * 100}
-                          size={(commList.khaai * 100) / 100}
+                          price={formatPrice(commList.lgaai * 100)}
+                          size={0}
                           color={"bg-[#8DD9FF]"}
                           blinkColor={"bg-[#00B2FF]"}
                           textColors={"text-black"}
@@ -218,20 +221,18 @@ const BookmakerComponent = ({
                       >
                         <BlinkingComponent
                           price={
-  inplayMatch &&
-  inplayMatch?.bookmakerRange > 0 &&
-  commList?.khaai != 0
-    ? Number(
-        (
-          (Number(commList?.lgaai) +
-            Number(inplayMatch?.bookmakerRange) / 100) *
+  formatPrice(
+    inplayMatch &&
+    inplayMatch?.bookmakerRange > 0 &&
+    commList?.khaai != 0
+      ? (Number(commList?.lgaai) +
+          Number(inplayMatch?.bookmakerRange) / 100) *
           100
-        ).toFixed(2)
-      )
-    : Number((Number(commList?.khaai) * 100).toFixed(2))
+      : Number(commList?.khaai) * 100
+  )
 }
 
-                          size={(commList.lgaai * 100) / 100}
+                          size={0}
                           color={"bg-[#FF94BC]"}
                           blinkColor={"bg-[#FE7A7F]"}
                           textColors={"text-black"}
