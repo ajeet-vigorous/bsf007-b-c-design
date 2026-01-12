@@ -13,10 +13,21 @@ const InPlayMatch = () => {
     : null;
 
 
+  // useEffect(() => {
+  //   let matchListData = matchlistLocal ? matchlistLocal : sportMatchList;
+  //   setMatchData(matchListData);
+  // }, [sportMatchList]);
   useEffect(() => {
-    let matchListData = matchlistLocal ? matchlistLocal : sportMatchList;
-    setMatchData(matchListData);
-  }, [sportMatchList]);
+  // Choose source data
+  let matchListData = matchlistLocal ? matchlistLocal : sportMatchList;
+
+  // Filter for sportId 4
+  const filteredData = matchListData?.filter(match => match.sportId === 4);
+
+  // Set the filtered data
+  setMatchData(filteredData);
+}, [sportMatchList]); // include matchlistLocal if it can change
+
 
   const sportOptions = [
     { id: 4, label: "Cricket" },

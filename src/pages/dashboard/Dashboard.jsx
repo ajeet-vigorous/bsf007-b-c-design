@@ -197,17 +197,30 @@ const Dashboard = ({ }) => {
 
 
 
+// const filteredData = matchData?.filter((match) => {
+//   if (activeTab == "inplay") {
+//     return true;
+//   }
+
+//   if (!isNaN(activeTab)) {
+//     return match.sportId == Number(activeTab);
+//   }
+
+//   return false;
+// });
+
 const filteredData = matchData?.filter((match) => {
-  if (activeTab == "inplay") {
-    return true;
+  if (activeTab === "inplay") {
+    return match.sportId === 4;
   }
 
   if (!isNaN(activeTab)) {
-    return match.sportId == Number(activeTab);
+    return match.sportId === 4 && match.sportId == Number(activeTab);
   }
 
-  return false;
+  return match.sportId === 4;
 });
+
 
 const getSportName = (sportId) => {
   const sport = AllSportsArray.find((item) => item.sportId == Number(sportId));
