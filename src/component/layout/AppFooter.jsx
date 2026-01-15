@@ -146,7 +146,7 @@ const domainSetting = JSON.parse(localStorage.getItem('clientdomainSetting'));
       </footer>
 
       
-      <div className="fixed w-full bottom-0 left-0 flex rounded-t-[30px] lg:hidden bg-[--primary] items-center !h-[59px] sm:!h-[55px]">
+      <div className="fixed w-full bottom-0 left-0 flex rounded-t-[30px] lg:hidden bg-[--primary] items-center !h-[59px] sm:!h-[55px]"   style={{ bottom: 'env(safe-area-inset-bottom)' }}>
         {/* {login && <LoginModal closeLogin={()=>setLogin(false)} />} */}
         <div className="mobile-header-data w-full">
           <ul className="grid grid-cols-5 ps-0 items-center !m-0">

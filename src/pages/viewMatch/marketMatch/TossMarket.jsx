@@ -82,7 +82,15 @@ const TossDataComponent = ({
                 {matchScoreDetails &&
                   matchScoreDetails.toss_data &&
                   matchScoreDetails.toss_data.length > 0
-                  ? matchScoreDetails.toss_data.map((commList, index) => (
+                  ? matchScoreDetails.toss_data.map((commList, index) => {
+                                        const tossOdds =
+  inplayMatch?.tossRate != undefined &&
+  inplayMatch?.tossRate != null &&
+  inplayMatch?.tossRate != 0
+    ? inplayMatch.tossRate
+    : commList.lgaai
+                    
+                    return(
                     <>
                       <div
                         key={index}
@@ -140,7 +148,7 @@ const TossDataComponent = ({
                               handleBackOpen({
                                 data: commList,
                                 type: "Yes",
-                                odds: commList.lgaai,
+                                odds: tossOdds,
                                 name: commList.team_name,
                                 betFor: "toss",
                                 oddsType: "toss",
@@ -156,7 +164,7 @@ const TossDataComponent = ({
                             }
                           >
                             <BlinkingComponent
-                              price={parseFloat(commList.lgaai * 100).toFixed(2).replace(/\.?0+$/, "")}
+                              price={parseFloat(tossOdds * 100).toFixed(2).replace(/\.?0+$/, "")}
                               size={100}
                               color={"bg-[#8DD9FF]"}
                               blinkColor={"bg-[#00B2FF]"}
@@ -172,7 +180,7 @@ const TossDataComponent = ({
                               handleBackOpen({
                                 data: commList,
                                 type: "Yes",
-                                odds: commList.lgaai,
+                                odds: tossOdds,
                                 name: commList.team_name,
                                 betFor: "toss",
                                 oddsType: "toss",
@@ -188,7 +196,7 @@ const TossDataComponent = ({
                             }}
                           >
                             <BlinkingComponent
-                              price={parseFloat(commList.lgaai * 100).toFixed(2).replace(/\.?0+$/, "")}
+                              price={parseFloat(tossOdds * 100).toFixed(2).replace(/\.?0+$/, "")}
                               size={100}
                               color={"bg-[#8DD2F0]"}
                               blinkColor={"bg-[#00B2FF]"}
@@ -314,7 +322,7 @@ const TossDataComponent = ({
                           />}
                       </>
                       
-                    ))
+                    )})
                   : null}
               </>
               </MatchDetailsHeaderSection>
