@@ -5,7 +5,9 @@ import { useNavigate } from 'react-router-dom';
 const CasinoList = () => {
     const [casinoList, setCasinoList] = useState([]);
     const navigate = useNavigate();
+    let userID = JSON.parse(localStorage.getItem(`user_info_${domainName}`));
     const handleResponseCasino = (product) => {
+        
         navigate(`/casino/${product.shortName}/${product.eventId}`)
     }
 

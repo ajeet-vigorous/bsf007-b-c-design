@@ -42,6 +42,7 @@ export const SPORTSCONSTANT = [
     count: 0,
     icon: "/subHeader/menu-99991.png",
     mobileicon: "/subHeader/menu-99991.png",
+    url: "/iframe-casino/550000"
   },
  
   {

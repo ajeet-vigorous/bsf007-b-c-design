@@ -3,6 +3,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import { apiCall } from "../../config/HTTP";
 import Loader from "../../component/loader/Loader";
 import { domainName } from "../../config/Auth";
+import { message } from "antd";
 
 const IframeCasino = () => {
   const [casinoData, setCasinoData] = useState(null);
@@ -13,8 +14,13 @@ const IframeCasino = () => {
 
   const { gameId } = useParams();
   const navigate = useNavigate();
-
+  const user = JSON.parse(localStorage.getItem(`user_info_${domainName}`));
   useEffect(() => {
+     if (user?.data?.isDemoClient) {
+    message.error("Demo User not allowed to play Casino. Play only with Real ID.");
+     navigate("/dashboard");
+    return;
+  }
     getCasinoData();
 
     if (showAlert) {
@@ -52,7 +58,7 @@ const IframeCasino = () => {
       } else {
         setShowAlert(true);
         setErrorType(1);
-        // setResMessage("Something went wrong");
+        setResMessage(casinoLoginResponse.status || "Something went wrong");
         setTimeout(() => {
           navigate("/dashboard");
         }, 2000);
@@ -60,7 +66,7 @@ const IframeCasino = () => {
     } catch (error) {
       setShowAlert(true);
       setErrorType(1);
-      // setResMessage("Something went wrong");
+      setResMessage(error.data.message || "Something went wrong");
       setTimeout(() => {
         navigate("/dashboard");
       }, 2000);
@@ -68,11 +74,12 @@ const IframeCasino = () => {
       setLoading(false);
     }
   };
-  const user = JSON.parse(localStorage.getItem(`user_info_${domainName}`));
+
+
   return (
     <div className="iframeCasinoMain">
             <div className="w-full px-2 uppercase py-1 flex justify-between bg-[--primary]">
-<div className="bg-black text-white text-xs px-2 py-1 flex items-center" onClick={() => navigate(-1)}> Back </div>
+<div className="bg-black text-white text-xs px-2 py-1 flex items-center" onClick={() =>   navigate("/dashboard")}> Back </div>
 <div className="text-sm font-bold text-white">{user?.data?.username}</div>
       </div>
       {showAlert && (

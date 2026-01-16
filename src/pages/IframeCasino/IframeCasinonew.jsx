@@ -4,6 +4,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import { apiCall } from "../../config/HTTP";
 import Loader from "../../component/loader/Loader";
 import { domainName } from "../../config/Auth";
+import { message } from "antd";
 
 const IframeCasinonew = () => {
   const [casinoData, setCasinoData] = useState(null);
@@ -14,7 +15,13 @@ const IframeCasinonew = () => {
   const history = useNavigate();
   const { gameId, provider } = useParams();
 
+  const user = JSON.parse(localStorage.getItem(`user_info_${domainName}`));
   useEffect(() => {
+         if (user?.data?.isDemoClient) {
+    message.error("Demo User not allowed to play Casino. Play only with Real ID.");
+    history("/dashboard");
+    return;
+  }
     getCasinoData();
   }, []);
 
@@ -48,7 +55,7 @@ const IframeCasinonew = () => {
 if (response?.code !== 0 && response?.error !== false) {
   setShowAlert(true);
   setErrorType(1);
-  // setResMessage(response.message || "OP_GENERAL_ERROR");
+  setResMessage(response.message || "OP_GENERAL_ERROR");
   setLoading(false);
 
   setTimeout(() => {
@@ -73,18 +80,17 @@ if (response?.code !== 0 && response?.error !== false) {
       console.error("Error fetching casino data:", error);
       setShowAlert(true);
       setErrorType(1);
-      setResMessage(error?.message || "Something went wrong");
+      setResMessage(error?.data.message || "Something went wrong");
       setLoading(false);
       
     }
   };
 
-  const user = JSON.parse(localStorage.getItem(`user_info_${domainName}`));
   
   return (
     <div className="iframeCasinoMain relative">
                      <div className="w-full px-2 uppercase py-1 flex justify-between bg-[--primary]">
-<div className="bg-black text-white text-xs px-2 py-1 flex items-center" onClick={() => navigate(-1)}> Back </div>
+<div className="bg-black text-white text-xs px-2 py-1 flex items-center" onClick={() => history("/dashboard")}> Back </div>
 <div className="text-sm font-bold text-white">{user?.data?.username}</div>
       </div>
       {showAlert && (
