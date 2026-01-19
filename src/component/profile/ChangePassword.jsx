@@ -97,9 +97,9 @@ const ChangePassword = () => {
 
     const isFormValid =
         fieldslogin.oldPassword &&
-        hasMinLength &&
-        hasSpecialChar &&
-        hasUppercase &&
+        // hasMinLength &&
+        // hasSpecialChar &&
+        // hasUppercase &&
         passwordsMatch;
 
     const getInputType = (field) => (showPassword[field] ? 'text' : 'password');
@@ -167,7 +167,7 @@ const ChangePassword = () => {
                             <div className="mt-1 text-red-500 text-xs">{errorslogin.password}</div>
 
                             {/* Password Rules */}
-                            {touched.password && (
+                            {/* {touched.password && (
                                 <div className="mt-2 ml-1 text-sm">
                                     <p className={`${hasMinLength ? 'text-green-600' : 'text-red-500'}`}>
                                         • 6–18 characters (a-z, 0–9)
@@ -179,7 +179,7 @@ const ChangePassword = () => {
                                         • One Uppercase
                                     </p>
                                 </div>
-                            )}
+                            )} */}
                         </div>
 
                         {/* Confirm Password */}
