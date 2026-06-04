@@ -53,11 +53,11 @@ const AppRightSIdebar = () => {
             <div className="">
                 <div className="w-full">
                 <ul className="p-0">
-                    <li>
+                    {/* <li>
                     <Link to={'/why-choose-us'}>
                         <img className="rounded-[4px] w-full h-auto" src="/images/zetto/why.png" alt=""/>
                     </Link>
-                    </li>
+                    </li> */}
                     { !token ? 
                         <>
                             <li>

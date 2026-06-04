@@ -174,7 +174,7 @@ const ChangePassword = () => {
                                     </p>
                                     <p className={`${hasSpecialChar ? 'text-green-600' : 'text-red-500'}`}>
                                         • Add one special character
-                                    </p>
+                                    </p>u
                                     <p className={`${hasUppercase ? 'text-green-600' : 'text-red-500'}`}>
                                         • One Uppercase
                                     </p>

@@ -200,3 +200,27 @@ export const httpPostBet = async (url, params) => {
     }
   }
 };
+
+
+export const encrypt = (text) => {
+  const str = String(text); // Ensure text is a string
+  const encrypted = CryptoJS.AES.encrypt(str, import.meta.env.VITE_SECRET_KEY).toString();
+  return encodeURIComponent(encrypted); // Encode to make it URL-safe
+};
+
+export const decrypt = (encryptedText) => {
+  try {
+    const decodedText = decodeURIComponent(encryptedText); // Decode the encrypted text
+    const bytes = CryptoJS.AES.decrypt(decodedText, import.meta.env.VITE_SECRET_KEY); // Decrypt the text
+    const decryptedText = bytes.toString(CryptoJS.enc.Utf8); // Convert bytes to UTF-8 string
+
+    if (!decryptedText) {
+      throw new Error("Decryption failed or resulted in empty string");
+    }
+
+    return decryptedText; // Return the decrypted text
+  } catch (error) {
+    console.error("Error during decryption:", error.message); // Log the error
+    return null; // Gracefully handle errors and return null
+  }
+};

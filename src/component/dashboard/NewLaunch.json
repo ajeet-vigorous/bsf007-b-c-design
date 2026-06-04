@@ -365,18 +365,7 @@
             "category_id": "99998",
             "redirect_type": "list"
         },
-        {
-            "id": "1761471099",
-            "name": "live prediction",
-            "product": "live prediction",
-            "category": "live prediction",
-            "position": "4",
-            "game_type": "live prediction",
-            "url_thumb": "frontend_config\/diam\/images\/17650463849494368.gif",
-            "multiplier": "100000",
-            "category_id": "99998",
-            "redirect_type": "list"
-        },
+       
         {
             "id": "1761990148",
             "name": "aviator",

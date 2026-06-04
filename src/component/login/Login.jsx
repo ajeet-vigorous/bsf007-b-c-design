@@ -110,7 +110,7 @@ const Login = () => {
       <div className="flex justify-center items-center h-screen">
         <div className="space-y-6">
           <div className="flex items-center justify-center">
-            <img src={settings.logo} alt='logo' className="lg:w-[228px] w-[250px]" />
+            {settings?.domainName == "ons3"  ?  <img src={settings.logo} alt='logo' className="lg:w-[228px] w-[180px]" />  : <img src={settings.logo} alt='logo' className="lg:w-[228px] w-[250px]" />}
           </div>
           <div className="justify-between items-start w-[350px] mx-auto bg-[#ffffff] rounded px-4 py-4">
             <div className="flex justify-center items-center text-[24px] pb-2 space-x-[3px]">

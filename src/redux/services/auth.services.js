@@ -6,6 +6,7 @@ async function login(data) {
     const user = await apiCall("POST", "user/login", data);
     if (user) {
       localStorage.setItem('clientspuser', JSON.stringify(user));
+      localStorage.setItem('dashboardModalOpen', true);
       localStorage.setItem(`user_info_${domainName}`, JSON.stringify(user));
       localStorage.setItem("token", JSON.stringify(user?.token))
       localStorage.setItem("clientBalance", JSON.stringify(user?.data?.balance));
@@ -13,7 +14,6 @@ async function login(data) {
       localStorage.setItem('oneBetAmount', JSON.stringify(user.data.oneClickBetAmount ? user.data.oneClickBetAmount : 0));
       localStorage.setItem('oneClickStatus', JSON.stringify(false));
       localStorage.setItem('betSlipData', JSON.stringify([100, 200, 300]));
-      localStorage.setItem('dashboardModalOpen', true);
       return { userinfo: user };
     }
   } catch (error) {
